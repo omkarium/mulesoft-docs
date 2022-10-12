@@ -1,0 +1,60 @@
+Copyright (c) Venkatesh Omkaram
+---
+
+If you are a Mulesoft Developer then this is the order of Testing which I recommend to follow. 
+
+## Dev Testing
+     1. Process Testing
+        a. Control flow Testing
+        b. Data flow Testing
+        c. Loop Testing
+     2. Unit Testing/Scenario Testing
+     3. Fuzz Testing
+     4. Reliability Testing
+     5. Security Testing
+## Performance Testing
+     1. Stress Testing
+     2. Load Testing
+## Factory Acceptance Testing (Same as SIT below) 
+## System Integration Testing (Black box testing) 
+     1. End to End Testing
+        a. Non Functional
+            i. Smoke Testing
+            ii. Reliability/Load Testing
+            iii. Recovery Testing
+        b. Functional Testing
+            i. Scenario/Data Testing
+            ii. Regression Testing
+     2. Compliance Testing
+## User Acceptance Testing
+
+
+# Definitions
+
+1. Dev Testing - To be performed by the developer during development stage.
+2. Process Testing - Test the main code functionality.
+3. Control flow Testing - To test the path and flow execution in an orderly and expected manner. Check if anything is missed. 
+4. Data flow Testing - To test the Data inputs and outputs of each message component in the flow. Assert if data transformations are valid.
+5. Loop Testing - To test all loops in the flow and ensure no unexpected behaviour.
+6. Unit and Scenario Testing - To test each distinguishable module and cover all possible scenarios and outcomes.
+7. Fuzz Testing - To test the API with invalid or random data as Input and cover all Input permutations. 
+8. Reliability Testing - To test if the immediately interacting dependent services and internally independent services are reliable and robust.
+9. Security Testing - To test the API security, working and reliable. To ensure zero vulnerabilities.
+10. Performance Testing - To test the application performance. 
+11. Stress Testing - To test the application to the break point and identify the peak load conditions. This also involves Spike Testing the application.
+12. Load Testing - To test the application at nominal/real time load conditions.
+13. Factory Acceptance Testing - This is not a software term. It's generally used in in-shop production houses. But in software terms, it means to Test the application 
+    along with the Functionals and to get a sign off before moving any further. Identify any critical or trivial missing features. Basically this is the first time a Functional team validates the application previously tested by the Developer alone.
+14. System Integration Testing - This is a mix of System Testing and Integration Testing. This is a series of steps to do a fully fledged test of an application by both the Developers and the Functionals.
+15. End to End Testing (E2E) - To test the application end to end. From Source(s) to Middleware and to the Destination(s).
+16. Non Functional Testing - Test anything other than thr Functional/Data aspects of the System.
+17. Smoke Testing - To test the application by triggers one last time before blasting it with the Full Load. This is also known as a Sanity Test. It's a break or proceed kind of a test. 
+18. Reliability/Load Testing - To test the application with various real time load conditions. Example: Full Load, Adhoc Load, Delta Load. 
+19. Recovery Testing - This test is usually overlooked in our Industry. To test different critical integration modules/services aka bottlenecks, by taking turns in turning off services and see the state of the both Inactive and Active systems and their system of records.
+20. Functional Testing - This is the bread winner. To test and verify the end outcome as seen in the Destination. To verify the requirements met. If failed, this can take us all the way back to the beginning.
+21. Scenario/Data Testing - This is explained in point 6.
+22. Regression Testing - To test the application if the newly introduced code changes are working as expected and not impacting any previously built features. Basically it's a backward compatibility assurance.
+24. Compliance Testing - To test if the entire System built is meeting all of the requirements and following all compliance standards. Example: SOX Complaint etc.
+25. User Acceptance Testing - You need not be bothered about this. To a developer this is just a mile stone achieved, aka The hand over. 
+
+
